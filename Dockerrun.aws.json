@@ -14,9 +14,6 @@
       "image": "stephenneal/samba-efs:v2",
       "name": "samba",
       "memory": 930,
-      "command": [
-        "-n"
-      ],
        "mountPoints": [
         {
           "containerPath": "/efs",
