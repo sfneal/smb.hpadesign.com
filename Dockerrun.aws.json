@@ -11,14 +11,10 @@
   "containerDefinitions": [
     {
       "essential": true,
-      "image": "dperson/samba:latest",
+      "image": "stephenneal/samba-efs:v2",
       "name": "samba",
       "memory": 930,
       "command": [
-        "-u",
-        "samba;password",
-        "-s",
-        "HPA;/efs",
         "-n"
       ],
        "mountPoints": [
