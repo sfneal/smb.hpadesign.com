@@ -14,12 +14,24 @@
       "image": "stephenneal/samba-efs:v2",
       "name": "samba",
       "memory": 930,
-      "environment": {
-        "USER1": "stephen;stealth",
-        "USER2": "harnaudo;patriots9",
-        "USER3": "bob;patriots9",
-        "SHARE1": "HPA;/efs;yes;no;no;"
-      },
+      "environment": [
+        {
+          "name": "USER1",
+          "value": "stephen;stealth"
+        },
+        {
+          "name": "USER2",
+          "value": "harnaudo;patriots9"
+        },
+        {
+          "name": "USER3",
+          "value": "bob;patriots9"
+        },
+        {
+          "name": "SHARE1",
+          "value": "HPA;/efs;yes;no;no;"
+        }
+      ],
       "mountPoints": [
         {
           "containerPath": "/efs",
