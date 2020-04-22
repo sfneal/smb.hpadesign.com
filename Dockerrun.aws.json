@@ -28,6 +28,10 @@
           "value": "bob;patriots9"
         },
         {
+          "name": "USER4",
+          "value": "luana;patriots9"
+        },
+        {
           "name": "SHARE1",
           "value": "HPA;/efs;yes;no;no;"
         }
