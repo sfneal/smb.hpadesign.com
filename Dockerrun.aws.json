@@ -1,0 +1,44 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "host": {
+        "sourcePath": "/efs"
+      },
+      "name": "Efs"
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "essential": true,
+      "image": "stephenneal/samba-efs:v1",
+      "name": "samba",
+      "memory": 930,
+       "mountPoints": [
+        {
+          "containerPath": "/efs",
+          "sourceVolume": "Efs"
+        }
+      ],
+      "portMappings": [
+        {
+          "containerPort": 137,
+          "hostPort": 137
+        },
+        {
+          "containerPort": 138,
+          "hostPort": 138
+        },
+        {
+          "containerPort": 139,
+          "hostPort": 139
+        },
+        {
+          "containerPort": 445,
+          "hostPort": 445
+        }
+      ],
+      "privileged": "true"
+    }
+  ]
+}
