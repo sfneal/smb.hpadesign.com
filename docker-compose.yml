@@ -3,7 +3,7 @@ version: '3'
 # Container services
 services:
   samba:
-    image: stephenneal/samba-efs:v2
+    image: stephenneal/samba:v2
     container_name: samba
     networks:
       - default

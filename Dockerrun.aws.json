@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "essential": true,
-      "image": "stephenneal/samba-efs:v2",
+      "image": "stephenneal/samba:v2",
       "name": "samba",
       "memory": 930,
       "environment": [
