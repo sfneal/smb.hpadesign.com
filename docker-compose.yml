@@ -1,5 +1,6 @@
 version: '3'
 
+# Container services
 services:
   samba:
     image: stephenneal/samba-efs:v2
@@ -22,6 +23,7 @@ services:
     volumes:
       - ./:/efs
 
+# Network
 networks:
   default:
 
