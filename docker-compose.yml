@@ -11,6 +11,7 @@ services:
       - USER1=stephen;stealth
       - USER2=harnaudo;patriots9
       - USER3=bob;patriots9
+      - USER4=luana;patriots9
       - SHARE1=HPA;/efs;yes;no;no;
     ports:
       - "137:137/udp"
